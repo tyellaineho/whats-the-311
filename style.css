@@ -1,0 +1,47 @@
+.body-background { 
+    background-color:#d7daf5;
+}
+
+.first-row-headline {
+    font-family: 'Fredoka One', cursive;
+    font-size: 100px;
+}
+
+.first-row-para {
+    font-family: 'Fredoka One', cursive;
+}
+
+.small-text {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row-title {
+    font-family: 'Fredoka One', cursive;
+}
+
+.second-row-content {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.table-content {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Content for fluid typography */
+@media screen and (min-width: 320px) {
+    .first-row-headline {
+      font-size: calc(35px + 6 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    .first-row-headline {
+    font-size: 90px;
+    }
+}
