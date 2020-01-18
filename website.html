@@ -27,7 +27,7 @@
 			Call Center Manager
 		</a>
 	</nav>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="body-background">
 			<div class="row">
 				<div class="col-md-2"></div>
@@ -44,7 +44,8 @@
 						<h5>Columbia Engineering Data Analytics</h5>
 						<br>
 						<div class="text-center">
-							<button type="button" class="btn btn-lg btn-info">Scrolldown to Explore Dataset</button></div>
+							<button type="button" class="btn btn-lg btn-info">Scrolldown to Explore Dataset</button>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -55,7 +56,9 @@
 					<img src="https://image.flaticon.com/icons/svg/1264/1264779.svg" class="img-fluid">
 					<br><br>
 					<div class="text-center">
-						<div class="small-text">Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
+						<div class="small-text">Icons made by <a href="https://www.flaticon.com/authors/srip"
+								title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">
+								www.flaticon.com</a></div>
 					</div>
 				</div>
 			</div>
@@ -72,12 +75,18 @@
 						<h3>About the call center data</h3>
 					</div>
 					<div class="row-content">
-						<p> All 311 Service Requests from 2010 to present. This information is automatically updated daily. 
-                            311’s mission is to provide the public with quick, easy access to all New York City government services and information while maintaining the highest possible level of customer service.
-                            311 allows other government bodies to focus on their core missions and manage their workload efficiently.  311 also helps City agencies improve their service delivery by providing accurate and consistent data tracking and analysis of all service requests.
-                            311 provides access to New York City government services through eight platforms:  Call Center, Social Media, Mobile App, Text, Video Relay Service and TTY/text telephone.
-                            
-                        </p>
+						<p> All 311 Service Requests from 2010 to present. This information is automatically updated
+							daily.
+							311’s mission is to provide the public with quick, easy access to all New York City
+							government services and information while maintaining the highest possible level of customer
+							service.
+							311 allows other government bodies to focus on their core missions and manage their workload
+							efficiently. 311 also helps City agencies improve their service delivery by providing
+							accurate and consistent data tracking and analysis of all service requests.
+							311 provides access to New York City government services through eight platforms: Call
+							Center, Social Media, Mobile App, Text, Video Relay Service and TTY/text telephone.
+
+						</p>
 						(Source: City of New York - NYC OpenData)
 						<br><br>
 						<div class="row-title">
@@ -93,8 +102,8 @@
 							width="100px" height="100px"></div>
 				</div>
 				<div class="col-md-4">
-					<div class=text-center><img src="https://image.flaticon.com/icons/svg/1024/1024828.svg" width="100px"
-							height="100px"></div>
+					<div class=text-center><img src="https://image.flaticon.com/icons/svg/1024/1024828.svg"
+							width="100px" height="100px"></div>
 				</div>
 				<div class="col-md-4">
 					<div class=text-center><img src="https://image.flaticon.com/icons/svg/1997/1997427.svg"
@@ -143,245 +152,109 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="text-center">
-						<div class="row-title">
-							<h4>[Text holder for instructions on how to read first graphic]</h4>
-							<br>
-						</div><select id="selDataset" onchange="optionChanged(this.value)"></select>
-					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
+					<div class="row-title">
+						<div class="row-title">
+							<h2>Visualizations of Call Center Data</h2>
+							<br>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-2"></div>
+				<div class="col-md-2">
+				</div>
 				<div class="col-md-8">
+					<img src="Figures/Heatmap.png" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 my-auto">
 					<br><br><br><br>
-					<div class="row-title">
-						<h3>[Title holder for first graphic]</h3>
+				</div>
+				<br><br><br>
+				<div class="second-row-content">
+					<p>As we might expect, we see that call volumes are highest from 9:00AM to 4:00PM on weekdays.
+						Interestingly, call volume also seems to spike around 10:00PM-12:00PM on Saturdays
+					</p>
+				</div>
+				<br><br><br>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="Figures/Complaints vs Non-Complaints percent.png" />
 					</div>
-					<div class="second-row-content">
-						<p> [Observational comment for first graphic]
-						</p>
-						<br><br>
-						<div class="row-title">
-							<h4>[Title holder for second graphic]</h4>
-							<div class="second-row-content">
-								[Comment holder for second graphic]
-							</div>
-						</div>
+					<div class="col-md-6">
+						<img src="Figures/Complaints vs Non-Complaints raw.png" />
 					</div>
 				</div>
+				<div class="second-row-content">
+					<p>Here we see that the ratio of complaints to non-complaints remains relatively consistent with a
+						slightly lower percentage of complaints from August to October.
+						Also, in terms of total volume of complaints and non-complaints, there seems to be on average a
+						higher number of 311 calls from the first 6 months of the year compared to the last 6 months of
+						the year.
+					</p>
+				</div>
+
 			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-7">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<br>
+		</div>
+		<div class="col-md-8">
+			<img src="Figures/Complaint by Year.png" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+			<div class="second-row-content">
+				<br><br>
+				<p style="font-weight: bold;">It seems like the time of the day and day of the year may affect
+					whether a call is a complaint or not.
+					See our Jupyter notebook to run our logistic regression model by choosing a certain time of day
+					and certain day of year to predict whether or not a call will be a complaint. </p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<br>
+			<div class="text-center">
+				<div class="row-title">
 					<br>
-					<div id="mapid" style="width: 1250px; height: 1000px;"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<div class="second-row-content">
-						<br><br>
-						<div class="row-title">
-							<h4>[Title holder for third graphic]</h4>
-							<div class="second-row-content">
-								[Comment holder for third graphic]
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-6">
-					<br>
-					<div id="bar"></div>
-				</div>
-				<div class="col-md-2">
-					<br>
-					<div class="table-content">
-						<div class="text-center">
-							<h5><b>[Title holder for fourth graphic]</b></h5>
-							<table class="table table-striped">
-								<thead>
-									<tr>
-										<th>County</th>
-										<th>State</th>
-									</tr>
-								</thead>
-								<tbody></tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-6">
-					<br><br>
-					<div class="row-title">
-						<h3>[Holder for second section]</h3>
-					</div>
-					<div class="second-row-content">
-						<p> [Holder for longer comment: Ozone, a gas composed of three atoms of oxygen (O3), occurs both in the Earth's upper
-							atmosphere and at ground level. Ozone can be good or bad, depending on where it is found.
-							“Good” ozone (also called 'stratospheric ozone') occurs naturally in the upper atmosphere,
-							where it forms a protective layer that shields us from the sun's harmful ultraviolet rays.
-							This beneficial ozone has been partially destroyed by man-made chemicals. “Bad” ozone is
-							found at ground level and is a harmful air pollutant, because of its health effects on
-							people and the environment, and it is the main ingredient in smog.
-							<br>
-							Evidence from observational studies strongly indicates that higher daily ozone
-							concentrations are associated with increased asthma attacks, increased hospital admissions,
-							increased daily mortality, and other markers of morbidity.]</p>
-						<br><br>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<br><br>
-					<div class=text-center><img src="{{ url_for('static', filename='css/asthma.svg') }}" width="300px"
-							height="300px"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-2">
-						<div class=text-center><img src="{{ url_for('static', filename='css/spray.svg') }}" width="175px"
-							height="175px"></div>
-				</div>
-				<div class="col-md-6">
-						<div class="row-title">
-							<h4>Different State, Different Rates</h4>
-						</div>
-						<div class="second-row-content">
-							<p>The natural concentration of ozone is about 0.01 parts per million (or 10 parts per
-								billion). According to the Environmental Protection Agency, exposure to ozone levels
-								greater than 0.07 parts per million (or 70 parts per billion) for 8 hours is unhealthy.
-								The highest levels of ozone from years 2013-2018 were found mainly in the southwest
-								region of the US, with peak ozone levels measured at 0.062 parts per million (or 62
-								parts per billion) in Clear Creek County, Colorado. The lowest levels of ozone were
-								found in Juncos, Puerto Rico at 0.006 parts per million (or 6 parts per billion).</p>
-							<br>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="text-center">
-							<div class="row-title">
-								<br>
-								<h4>[Select a Day and Time below to Explore Expected Calls by Type]</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-4">
-						<br>
-						[Select a Day and Time to view Call values]
-						<br>
-						Pick Your Day:
-						<select id="select_state">
-							<option value="Monday">Monday</option>
-							<option value="Tuesday">Tuesday</option>
-							<option value="Wednesday">Wednesday</option>
-							<option value="Thursday">Thursday</option>
-							<option value="Friday">Friday</option>
-							<option value="Saturday">Saturday</option>
-							<option value="Sunday">Sunday</option>
-						</select>
-						<br>
-						Pick Your Hour:
-						<select id="select_year">
-							<option value="00:00">00:00</option>
-							<option value="01:00">01:00</option>
-							<option value="02:00">02:00</option>
-							<option value="03:00">03:00</option>
-							<option value="04:00">04:00</option>
-							<option value="05:00">05:00</option>
-							<option value="06:00">06:00</option>
-							<option value="07:00">07:00</option>
-							<option value="08:00">08:00</option>
-							<option value="09:00">09:00</option>
-							<option value="10:00">10:00</option>
-							<option value="11:00">11:00</option>
-							<option value="12:00">12:00</option>
-							<option value="13:00">13:00</option>
-							<option value="14:00">14:00</option>
-							<option value="15:00">15:00</option>
-							<option value="16:00">16:00</option>
-							<option value="17:00">17:00</option>
-							<option value="18:00">18:00</option>
-							<option value="19:00">19:00</option>
-							<option value="20:00">20:00</option>
-							<option value="21:00">21:00</option>
-							<option value="22:00">22:00</option>
-							<option value="23:00">23:00</option>
-						</select>
-
-						<button onclick="getOption()">
-							See another chart
-						</button>
-						<div id="sunburst"></div>
-					</div>
-					<div class="col-md-4">
-						<br>
-						Select a Day from the dropdown menu below to find out expected calls
-						<select id="selLine" onchange="lineOptionChanged(this.value)">
-							<!-- <option>---</option> -->
-						</select>
-						<br><br>
-						<div id="linegraph"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<br>
-						<div class="text-center">
-							<div class="row-title">
-								<br>
-								<h5>The B.E.O.MB Squad January 2020</h5><br><br><br>
-							</div>
-						</div>
-
-					</div>
-
+					<h5>The B.E.O.MB Squad January 2020</h5><br><br><br>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-		</div>
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-11">
+	</div>
+	<div class="row">
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-11">
 
 
-				<div class="row">
-					<div class="col-md-1"></div>
-					<div class="col-md-11">
-					</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-11">
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-		<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+	<script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
-		<div id="myDiv"></div>
+	<div id="myDiv"></div>
 </body>
 
 </html>
